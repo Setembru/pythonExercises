@@ -13,7 +13,7 @@ def main():
         root = -b/(2*a)
         print("a raiz desta equação é",root)
     if delta > 0:
-        x1 = (-b - math.sqrt(delta))/2*a
-        x2 = (-b + math.sqrt(delta))/2*a
+        x1 = (-b - math.sqrt(delta))/(2*a)
+        x2 = (-b + math.sqrt(delta))/(2*a)
         print("as raízes da equação são",x1,"e",x2)
 main()

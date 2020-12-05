@@ -1,19 +1,21 @@
+# Introdução à Ciência da Computação com Python Parte 1 // Week 5
+# 05/12/2020
+# Author: Arthur "Setembru" Kuwahara
+
 def facx(x):
-    if x <= 1:
-        return 0
-    elif x > 1:
-        i = x
-        while i != 1:
+    i = x
+    if i > 0:
+        while i > 1:
             i -= 1
-            x = x * i
+            x = i * x
         return x
-
-def newtonBin(n, k):
-    if n < k:
-        return 0
+    elif x == 0:
+        return 1
     else:
-        return facx(n)/facx(k)*facx(n-k)
+        return 'Undefined'
 
-n = int(input("Insert n: "))
-k = int(input("Insert k: "))
-print(newtonBin(n, k))
+def binNumber(n, k):
+    if n >= k:
+        return facx(n)/(facx(k)*facx(n-k))
+    else:
+        return 0

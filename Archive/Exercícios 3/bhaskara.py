@@ -14,8 +14,8 @@ def main():
         root = -b/(2*a)
         print("Essa equação possui uma única equação, que é:",root)
     elif delta > 0:
-        x1 = (-b - math.sqrt(delta))/2*a
-        x2 = (-b + math.sqrt(delta))/2*a
+        x1 = (-b - math.sqrt(delta))/(2*a)
+        x2 = (-b + math.sqrt(delta))/(2*a)
         print("As raízes dessa equação são:",x1,x2)
 
 #Escrevendo a equação
